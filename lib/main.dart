@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
 
   void _setarMensagem(double imc) {
     if (imc < 18.6) {
-      _info = "Morrendo de Magreza (${imc.toStringAsPrecision(3)})";
+      _info = "Abaixo do Peso (${imc.toStringAsPrecision(3)})";
     } else if (imc >= 18.6 && imc < 24.9) {
       _info = "Peso Ideal (${imc.toStringAsPrecision(3)})";
     } else if (imc >= 24.9 && imc < 29.9) {
@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
     } else if (imc >= 34.9 && imc < 39.9) {
       _info = "Obesidade Grau II (${imc.toStringAsPrecision(3)})";
     } else if (imc >= 40) {
-      _info = "Abaixo do Peso (${imc.toStringAsPrecision(3)})";
+      _info = "Obesidade Grau III (${imc.toStringAsPrecision(3)})";
     }
   }
 
